@@ -1,0 +1,22 @@
+<div *ngIf="movie" class="movie-detail-container">
+  <div class="top-section">
+    <img [src]="movie.image" alt="{{ movie.name }}" class="movie-poster" />
+
+    <div class="movie-info">
+      <h1>{{ movie.name }}</h1>
+      <p class="description">{{ movie.description }}</p>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="info-item">
+      <strong>Categoria:</strong> {{ movie.category }}
+    </div>
+    <div class="info-item">
+      <strong>Anno:</strong> {{ movie.year }}
+    </div>
+    <div class="info-item">
+      <strong>Rating:</strong> {{ movie.rating }}
+    </div>
+  </div>
+</div>

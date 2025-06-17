@@ -1,0 +1,29 @@
+.container {
+  height: 28rem;
+  width: 18rem;
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.favourite-container {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: #ff2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+.favourite-container:hover {
+  scale: 1.1;
+}
+
+.favourite {
+  color: white;
+}

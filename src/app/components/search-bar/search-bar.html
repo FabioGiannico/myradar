@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="search-bar-container">
+    <input placeholder="Cerca ...">
+    <button>Cerca</button>
+  </div>
+
+  <div class="filter-container">
+    <button (click)="toggleFilter()">
+      Filtra
+      <mat-icon>filter_list</mat-icon>
+    </button>
+  </div>
+</div>
+
+
+
+<div class="filter-modal" *ngIf="showFilter">
+  <h3>Filtra per Rating</h3>
+  <label>Da: <input type="number" [(ngModel)]="filter.min" min="0" max="10"></label>
+  <label>A: <input type="number" [(ngModel)]="filter.max" min="0" max="10"></label>
+
+  <div class="modal-actions">
+    <button (click)="applyFilter()">Applica</button>
+    <button (click)="toggleFilter()">Chiudi</button>
+  </div>
+</div>

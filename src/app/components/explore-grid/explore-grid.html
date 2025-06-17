@@ -1,0 +1,11 @@
+<div class="container">
+  <app-search-bar *ngIf="showSearchBar"/>
+
+  <div class="grid-container">
+    <div *ngFor="let movie of movies" class="card-container">
+      <a [routerLink]="['/film', movie.id]">
+        <app-card [movie]="movie"></app-card>
+      </a>
+    </div>
+  </div>
+</div>

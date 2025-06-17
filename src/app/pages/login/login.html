@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="form-container">
+    <div class="email-container">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          [formControl]="email"
+          (blur)="updateErrorMessage()"
+          required
+        />
+        @if (email.invalid) {
+          <mat-error>{{ errorMessage() }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="psw-container">
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input
+          [formControl]="password"
+          required
+          matInput
+          [type]="hide() ? 'password' : 'text'"/>
+        <button
+          matIconButton
+          matSuffix
+          (click)="clickEvent($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide()"
+        >
+          <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+    <button mat-raised-button id="submit-button" (click)="login()">Accedi</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container" id="movies-grid">
+  <div class="title-container">
+    <p>
+      Di tendenza
+    </p>
+  </div>
+
+  <div class="slider-container">
+    <button (click)="prevMovie()">⬅️</button>
+    <div class="grid-container">
+      <div *ngFor="let movie of visibleMovies" class="card-container">
+        <a [routerLink]="['/film', movie.id]">
+          <app-card [movie]="movie"></app-card>
+        </a>
+      </div>
+    </div>
+    <button (click)="nextMovie()">➡️</button>
+  </div>
+
+  <div class="button-container">
+    <button>Scopri di più</button>
+  </div>
+</div>

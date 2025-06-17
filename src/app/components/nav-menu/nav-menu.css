@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 6rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+a:hover {
+  scale: 1.1;
+}

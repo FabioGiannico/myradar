@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  background-color: #ff2a2a;
+  color: white;
+  height: 35vh;
+}
+
+.left-col,
+.right-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+
+.social-icons i:hover {
+  scale: 1.2;
+}
+

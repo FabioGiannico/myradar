@@ -1,0 +1,9 @@
+<div class="container" [ngStyle]="{'background-image': 'url(' + movie.image + ')'}">
+  <div class="favourite-container">
+    <mat-icon
+      (click)="changeFavourite()"
+      [style.color]="isFavourite ? 'black' : 'white'"
+      class="favourite">favorite
+    </mat-icon>
+  </div>
+</div>

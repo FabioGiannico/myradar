@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-container input,
+.search-bar-container button {
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+
+.search-bar-container input {
+  border: 1px solid #ff2a2a;
+  outline: none;
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.search-bar-container button {
+  height: 2.5rem;
+  width: 6rem;
+  border: none;
+  background-color: #ff2a2a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.search-bar-container button:hover {
+  background-color: #df2727;
+}
+
+.filter-container {
+  margin-left: 3.5rem;
+}
+
+.filter-container button {
+  font-size: 0.9rem;
+  height: 2.5rem;
+  width: 9rem;
+  border: none;
+  background-color: #ff2a2a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter-container button:hover {
+  background-color: #df2727;
+}
+
+
+.filter-modal {
+  z-index: 10;
+}

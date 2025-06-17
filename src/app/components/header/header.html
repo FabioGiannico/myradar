@@ -1,0 +1,19 @@
+<header class="container">
+  <div class="mobile-menu-container">
+    <mat-icon class="icon" (click)="toggleMenu()">menu</mat-icon>
+  </div>
+
+  <div class="logo-container">
+    <a routerLink="/">
+      <img src="/logo.png" alt="logo">
+    </a>
+  </div>
+
+  <div class="nav-bar-container">
+    <app-nav-menu/>
+  </div>
+</header>
+
+<div class="mobile-menu-overlay" *ngIf="showMenu">
+  <app-mobile-menu (close)="toggleMenu()"></app-mobile-menu>
+</div>

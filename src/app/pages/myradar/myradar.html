@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>I tuoi film preferiti:</h1>
+
+  <div *ngIf="hasFavourite">
+    <app-explore-grid [movies]="favouriteMovies" [showSearchBar]="false" />
+  </div>
+
+  <div *ngIf="!hasFavourite">
+    <p class="no-fav-container">Non è presente nessun film tra i tuoi preferiti</p>
+  </div>
+</div>
